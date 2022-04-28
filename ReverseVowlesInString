@@ -1,0 +1,25 @@
+ch=input("String:")
+
+vow=set("aeiou")
+lis=[]
+k=0
+chh=""
+
+for i in ch:
+    for j in vow:
+        if i==j:
+            lis.append(i)
+
+li=lis[::-1]
+print (li)
+
+for i in ch:
+    for j in vow:
+        if i==j:
+            chh+=li[k]
+            k+=1
+            break
+    else:
+        chh+=i
+
+print(chh)
