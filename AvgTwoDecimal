@@ -1,0 +1,13 @@
+def avg(num):
+    f="{:.2f}".format(sum(num)/len(num))
+    print(f)
+    
+n=input().split()
+
+k=0
+
+for i in n:
+    n[k]=int(i)
+    k+=1
+
+avg(n)
